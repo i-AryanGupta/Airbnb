@@ -11,6 +11,9 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
+                
+                SearchAndFliterBar()
+                
                 // why - because we want only the item render on screen as they appear and we don't wanna render all at once
                 LazyVStack(spacing: 32){
                     
